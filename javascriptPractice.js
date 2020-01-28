@@ -47,7 +47,7 @@ let userProfile1 = {
 
 }
 // Dot notation
-console.log(userProfile1.favoriteFoods)
+// console.log(userProfile1.email)
 
 // bracket notation
 userProfile1['email']
@@ -57,9 +57,12 @@ userProfile1['email']
 
 // array of objects
 var array = [{ pet1: 'cat', pet2: 'bird' }, { pet2: 'giraffe' }, { pet3: 'dog' }]
-// console.log(array[0].key2)
+// console.log(array[1].pet2)
 
 
+// arrays in arrays
+let tricky = [[1, 2], [3, 4], [5, 6]]
+console.log(tricky[2][0])
 
 
 // write a function to increase age
