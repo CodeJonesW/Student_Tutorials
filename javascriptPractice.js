@@ -14,15 +14,14 @@ var newString = `this is a string using interpolation to reference a variable li
 
 let pet = 'cat'
 let sentence = `my favorite pet is a ${pet}`
-console.log(newString)
+// console.log(newString)
 
 // Arrays
 
 var pets = ['cat', 'dog', 'bird', 1, 2, 3]
 
 // access array index
-// console.log(pets[1])
-// console.log('1', pets)
+pets[0]
 // adds to end of the array
 pets.push('alligator')
 // console.log('2', pets)
@@ -37,15 +36,7 @@ pets.push('alligator')
 // object keys are actually strings if you analyze the data type
 // objects are not ordered numerically
 
-let object1 = {
-    key1: 'value1'
-}
 
-// console.log(object1.key1)
-
-let input = 'age'
-
-object1[input]
 
 let userProfile1 = {
     email: "willjones@email.com",
@@ -56,7 +47,7 @@ let userProfile1 = {
 
 }
 // Dot notation
-userProfile1.email
+console.log(userProfile1.favoriteFoods)
 
 // bracket notation
 userProfile1['email']
@@ -65,7 +56,7 @@ userProfile1['email']
 
 
 // array of objects
-var array = [{ pet1: 'cat', pet2: 'bird' }, { pet2: 'giraffe' }, { pet3: '' }]
+var array = [{ pet1: 'cat', pet2: 'bird' }, { pet2: 'giraffe' }, { pet3: 'dog' }]
 // console.log(array[0].key2)
 
 
