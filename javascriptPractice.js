@@ -62,18 +62,19 @@ var array = [{ pet1: 'cat', pet2: 'bird' }, { pet2: 'giraffe' }, { pet3: 'dog' }
 
 // arrays in arrays
 let tricky = [[1, 2], [3, 4], [5, 6]]
-console.log(tricky[2][0])
+// console.log(tricky[2][0])
 
 
 // write a function to increase age
-function userBirthday(user) {
-    // user.age = user.age + 1 
-    user.age += 1
-    return user
+function giveUserABirthday(userObj) {
+    // userObj.age = userObj.age + 1 
+    userObj.age += 1
 }
 
+
 // using the function and passing it the userProfile1 object
-// console.log(userBirthday(userProfile1))
+console.log(giveUserABirthday(userProfile1))
+console.log(userProfile1)
 
 
 
