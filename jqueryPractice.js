@@ -31,6 +31,13 @@ function grabEmailInput() {
 </form>
 
 
+// css change with jQuery
+$("submit").on("click", function () {
+    $("emailInput").css('color', 'red')
+})
+
+
+
 
 
 

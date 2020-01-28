@@ -73,15 +73,17 @@ function giveUserABirthday(userObj) {
 
 
 // using the function and passing it the userProfile1 object
-console.log(giveUserABirthday(userProfile1))
-console.log(userProfile1)
+// console.log(giveUserABirthday(userProfile1))
+// console.log(userProfile1.age)
 
 
 
 // this is just javscript 
-// const button = document.getElementById("myButton")
+const button1 = document.getElementById("myButton")
 
-// button.addEventListener("click", userBirthday(userProfile1))
+button1.addEventListener("click", function () {
+    console.log(userProfile1)
+})
 
 // this is jquery
 // $("myButton").click(function () {
