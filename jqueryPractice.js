@@ -24,11 +24,48 @@ function grabEmailInput() {
     localStorage.setItem('email', string)
 }
 
-
+// example HTML DOC
 <form>
     <input id="emailInput" type="text" placeholder="Email"></input>
-    <button id="submit">Submit</button>
+    <button id="submit">Submit Email</button>
 </form>
+
+
+
+
+{/* <div>
+<button id="answerButton"> answer A</button>
+</div> */}
+
+let currentIndex = 0
+
+let questionsArray = [1, 2, 3]
+
+
+$("answerBtn").on('click', function (event) {
+    console.log(event.srcElement.innerHTML)
+    if (event.srcElement.innerHTML === answer) {
+        console.log('correct')
+        // do something with time
+        currentQuestion = currentQuestion + 1
+        populateHtml()
+    } else {
+        // incorrect
+    }
+})
+
+
+function populateHtml() {
+    let questionElement = $("question")
+    questionElement.innerHTML = questionsArray[currentQuestion]
+}
+
+
+
+
+
+
+
 
 
 // css change with jQuery
