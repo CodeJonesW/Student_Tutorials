@@ -1,4 +1,4 @@
-var isHappy = "lala"
+var isHappy = true
 var isHungry = false
 
 
