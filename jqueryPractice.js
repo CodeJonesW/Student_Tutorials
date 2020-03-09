@@ -73,6 +73,20 @@ $("submit").on("click", function () {
     $("emailInput").css('color', 'red')
 })
 
+let key = '123'
+let city =
+
+    // api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}
+
+    let query = `api.openweathermap.org/data/2.5/weather?q={city name}&appid={your api key}`
+
+$.ajax({
+    type: "GET",
+    url: `example.com/api/user/1&apiKEY=${key}`
+}).then(function (data) {
+    console.log(data)
+})
+
 
 
 

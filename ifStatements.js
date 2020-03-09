@@ -1,4 +1,4 @@
-var isHappy = false
+var isHappy = true
 var isHungry = false
 
 
@@ -7,6 +7,8 @@ function checkMood() {
         console.log("Hey im happy!")
     } else if (isHappy === false) {
         console.log("Oooo bad mood")
+    } else {
+        console.log("other do this. but you cant! ha")
     }
 }
 

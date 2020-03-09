@@ -39,12 +39,12 @@ pets.push('alligator')
 
 
 let userProfile1 = {
+    name: "Will",
     email: "willjones@email.com",
     location: "USA",
     age: 27,
     favoriteFoods: ['pizza', 'curry', 'icecream'],
     isHappy: true
-
 }
 // Dot notation
 // console.log(userProfile1.email)
@@ -57,7 +57,7 @@ userProfile1['email']
 
 // array of objects
 var array = [{ pet1: 'cat', pet2: 'bird' }, { pet2: 'giraffe' }, { pet3: 'dog' }]
-// console.log(array[1].pet2)
+// console.log(array[1])
 
 
 // arrays in arrays
@@ -66,23 +66,25 @@ let tricky = [[1, 2], [3, 4], [5, 6]]
 
 
 // write a function to increase age
-function giveUserABirthday(userObj) {
-    // userObj.age = userObj.age + 1 
-    userObj.age += 1
+function giveUserABirthday(will) {
+    userProfile1.age = will.age += 1
 }
 
 
-// using the function and passing it the userProfile1 object
-// console.log(giveUserABirthday(userProfile1))
-// console.log(userProfile1.age)
+
+// unction and passing it the userProfile1 object
+// giveUserABirthday(userProfile1)
+console.log(userProfile1.age)
 
 
 
 // this is just javscript 
 const button1 = document.getElementById("myButton")
+const ageHTML = document.getElementById("ageHTMLElement")
 
-button1.addEventListener("click", function () {
-    console.log(userProfile1)
+button1.addEventListener("click", function (e) {
+    giveUserABirthday(userProfile1)
+    ageHTML.innerHTML = userProfile1.age
 })
 
 // this is jquery
