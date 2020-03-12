@@ -1,6 +1,8 @@
 var isHappy = true
 var isHungry = false
 
+isHappy = "anything"
+
 
 function checkMood() {
     if (isHappy === true) {
@@ -8,7 +10,15 @@ function checkMood() {
     } else if (isHappy === false) {
         console.log("Oooo bad mood")
     } else {
-        console.log("other do this. but you cant! ha")
+        console.log("otherwise do this")
+    }
+}
+
+function checkMood2() {
+    if (isHappy === true) {
+        console.log("Hey im happy!")
+    } else {
+        console.log("Oooo bad mood")
     }
 }
 

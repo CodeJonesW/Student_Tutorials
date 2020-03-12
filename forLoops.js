@@ -1,4 +1,4 @@
-let array = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
+let listOfPets = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
 
 // For Loops have 3 parameters
 // 1st parameter
@@ -7,8 +7,11 @@ let array = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
 // - if this condition is true continue to the next iteration of the loop
 // 3rd parameter
 // - how to manipulate the defined variable on each iteration of the loop
-for (let i = 0; i < array.length; i++) {
-    // here we use our i variable to access the array indexes 0 - 6 (0 - array.length)
-    console.log(array[i])
+
+
+
+for (let i = 0; i < listOfPets.length; i++) {
+    // here we use our i variable to access the array indexes 0 - 5)
+    console.log(listOfPets[i])
 }
 
