@@ -2,8 +2,11 @@
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
 
+// let vs const
+// use let when you intend to redefine variable and const for when you do not intend it to change.
+
 var string1 = "this is a string!"
-var string2 = ' this is also a string!'
+var string2 = 'this is also a string!'
 
 // double quotes cannot go inside single quotes
 var string3 = "this is a 'a famous quote'"
@@ -22,10 +25,10 @@ let sentence = `my favorite pet is a ${pet}`
 var pets = ['cat', 'dog', 'bird', 1, 2, 3]
 
 // access array index
-pets[5]
+// pets[5]
 // adds to end of the array
 var newPets = pets.push('alligator')
-// console.log(pets)
+// console.log(newPets)
 
 
 
@@ -46,17 +49,21 @@ let userProfile1 = {
     location: "USA",
     age: 27,
     favoriteFoods: ['pizza', 'curry', 'icecream'],
-    isHappy: true
+    isHappy: true,
+    instruments: {
+        guitars: ["esp", "fender"],
+        keyboards: "native Instruments"
+    }
 }
 // Dot notation
-// console.log(userProfile1.name)
+// console.log(userProfile1.instruments.guitars[0])
 
 // bracket notation
 userProfile1['location']
 
-let africa = "location"
-userProfile1.location
-// console.log(userProfile1[africa])
+let exampleVariable = "location"
+// userProfile1.location
+// console.log(userProfile1[exampleVariable])
 
 // console.log(userProfile1.favoriteFoods[0])
 
@@ -68,58 +75,54 @@ var array = [{ pet1: 'cat', pet2: 'bird' }, { pet1: 'giraffe' }, { pet1: 'dog' }
 
 // arrays in arrays
 let tricky = [[1, 2], [3, 4], [5, 6]]
-console.log(tricky[3][1])
+// console.log(tricky[1][0])
 
 
 // write a function to increase age
 function giveUserABirthday(userObject) {
-    userProfile1.age = userObject.age += 1
-    // console.log(userProfile1)
+    // userObject = userObject + 1 
+    // userObject.age = userObject.age + 1
+
+    userObject.age = userObject.age += 1
 }
+
+// giveUserABirthday(userProfile1)
+// console.log(userProfile1)
 
 function changeEmail(userProfile, email) {
     userProfile.email = email
 }
 
-changeEmail(userProfile1, "newEmail@email.com")
+// changeEmail(userProfile1, "newEmail@email.com")
+// console.log(userProfile1)
 
-
-
-// unction and passing it the userProfile1 object
-giveUserABirthday(userProfile1)
-console.log(userProfile1.age)
 
 
 
 // this is just javscript 
-// const button1 = document.getElementById("myButton")
-// const ageHTML = document.getElementById("ageHTMLElement")
+const button1 = document.getElementById("myButton")
+const ageHTML = document.getElementById("ageHTMLElement")
 
-button1.addEventListener("click", function(e) {
-    console.log(e)
+button1.addEventListener("click", function (e) {
+    // console.log(e)
     giveUserABirthday(userProfile1)
     ageHTML.innerHTML = userProfile1.age
 })
 
 // this is jquery
-$("myButton").click(function () {
-    giveUserABirthday(userProfile1)
-})
-
-// $("myButton").hover(function () {
-//     changeColor()
+// $("myButton").click(function () {
+//     giveUserABirthday(userProfile1)
+//     ageHTML.innerHTML = userProfile1.age
 // })
 
-
-// function changeColor() {
-//     $("myButton").addClass("colorGreen")
-// }
-
+button1.addEventListener("onmouseover", function () {
+    changeColor(button1)
+})
 
 
-
-
-
+function changeColor(button) {
+    button.setAttribute("style", { "color": "green" })
+}
 
 
 
@@ -127,8 +130,12 @@ $("myButton").click(function () {
 
 
 
-// let vs const
-// use let when you intend to redefine variable and const for when you do not intend it to change.
+
+
+
+
+
+
 
 
 
