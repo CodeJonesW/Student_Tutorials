@@ -34,16 +34,18 @@ clear: both;
 main {
 float: left;
 }
-footer {
-    margin-bottom: 15px;
-    font-size: 20px;
+#meterDiv {
+    float: center;
+    margin: 20px;
+    font-size: 15px;
     color: black;
     text-align: center;
     text-decoration: underline;
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 92%;
+    align-content: center;
 }
 #meterId {
     width: 70%;
@@ -57,6 +59,7 @@ footer {
 #col1 {
     margin: 1vh;
     background-color: blue;
+    color: white;
     border-radius: 1vh;
     padding: 1vh;
     text-align: center;
@@ -65,11 +68,12 @@ footer {
 #col2 {
     margin: 1vh;
     background-color: green;
+    
     border-radius: 1vh;
     padding: 1vh;
     text-align: center;
 }
 
 #outerDIv {
-    background-image: url('https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-1200-80.jpg');
+    background-image: url('https://spacenews.com/wp-content/uploads/2018/05/24359364107_152b0152ff_k.jpg');
 }
