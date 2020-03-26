@@ -1,0 +1,75 @@
+h1 {
+
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+img {
+width: 80%;
+height: auto;
+margin-left: 50px;
+
+}
+
+#content{
+padding: 50px;
+}
+
+
+.clearfix::after {
+content: " ";
+display: block;
+clear: both;
+}
+
+
+
+main {
+float: left;
+}
+footer {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+#meterId {
+    width: 70%;
+}
+
+#meterDiv {
+    align-content: center;
+    padding: 20px;
+}
+
+#col1 {
+    margin: 1vh;
+    background-color: blue;
+    border-radius: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+#col2 {
+    margin: 1vh;
+    background-color: green;
+    border-radius: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+#outerDIv {
+    background-image: url('https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-1200-80.jpg');
+}
