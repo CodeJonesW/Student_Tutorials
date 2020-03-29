@@ -5,9 +5,12 @@
   "main": "axios.js",
   "dependencies": {
     "axios": "^0.19.2",
+    "compression": "^1.7.4",
     "express": "^4.17.1",
     "fs": "0.0.1-security",
-    "inquirer": "^7.1.0"
+    "inquirer": "^7.1.0",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {},
   "scripts": {
