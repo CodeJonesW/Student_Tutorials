@@ -8,92 +8,97 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./rowsAndCols.css">
+
     <link rel="icon" href='https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-1200-80.jpg'>
 </head>
 
 <body id="outerDIv">
+    <div class="container">
+        <header>
+            <h1>Rows and Cols</h1>
+        </header>
+    </div>
+    <!-- when you use bootstrap rows and columns make sure the parent div has the class
+container fluid if you want it to be responsive -->
     <div class="container-fluid">
+        <!-- define you rows by giving divs the class name row -->
         <div class="row">
             <div id="col1" class="col-md-8">
-                <h1>Hello world </h1>
+                <h2>Hello world </h2>
                 <p>this is my first column !
                 </p>
             </div>
             <div id="col2" class="col-md-3">
-                <h1>Hello world</h1>
+                <h2>Hello world</h2>
                 <p>this is my second column !
                 </p>
             </div>
         </div>
         <div class="row">
             <div id="col1" class="col-md-8">
-                <h1>Hello world </h1>
+                <h2>Hello world </h2>
                 <p>this is my first column !
                 </p>
             </div>
             <div id="col2" class="col-md-3">
-                <h1>Hello world</h1>
+                <h2>Hello world</h2>
                 <p>this is my second column !
                 </p>
             </div>
         </div>
         <div class="row">
             <div id="col1" class="col-md-8">
-                <h1>Hello world </h1>
+                <h2>Hello world </h2>
                 <p>this is my first column !
                 </p>
             </div>
             <div id="col2" class="col-md-3">
-                <h1>Hello world</h1>
+                <h2>Hello world</h2>
                 <p>this is my second column !
                 </p>
             </div>
         </div>
         <div class="row">
             <div id="col1" class="col-md-8">
-                <h1>Hello world </h1>
+                <h2>Hello world </h2>
                 <p>this is my first column !
                 </p>
             </div>
             <div id="col2" class="col-md-3">
-                <h1>Hello world</h1>
+                <h2>Hello world</h2>
                 <p>this is my second column !
                 </p>
             </div>
         </div>
         <div class="row">
             <div id="col1" class="col-md-8">
-                <h1>Hello world </h1>
+                <h2>Hello world </h2>
                 <p>this is my first column !
                 </p>
             </div>
             <div id="col2" class="col-md-3">
-                <h1>Hello world</h1>
+                <h2>Hello world</h2>
                 <p>this is my second column !
                 </p>
             </div>
         </div>
     </div>
+    <footer>
+        <div id="meterDiv">
+            <meter id="meterId" value="6" min="0" max="10">2 out of 10</meter></br>
+            <button id="clickButton">Click to increase Understanding</button>
+        </div>
 
-    <!-- <div class="row">
-            <div class="col-md-8">.col-md-8</div>
-            <div class="col-md-4">.col-md-4</div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4">.col-md-4</div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">.col-md-6</div>
-            <div class="col-md-6">.col-md-6</div>
-        </div> -->
+    </footer>
+
     </div>
 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
+    <script src="./rowsAndCols.js"></script>
 </body>
 
 </html>

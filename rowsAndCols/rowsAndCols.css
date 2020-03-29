@@ -1,0 +1,79 @@
+h1 {
+
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+
+img {
+width: 80%;
+height: auto;
+margin-left: 50px;
+
+}
+
+#content{
+padding: 50px;
+}
+
+
+.clearfix::after {
+content: " ";
+display: block;
+clear: both;
+}
+
+
+
+main {
+float: left;
+}
+#meterDiv {
+    float: center;
+    margin: 20px;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 92%;
+    align-content: center;
+}
+#meterId {
+    width: 70%;
+}
+
+#meterDiv {
+    align-content: center;
+    padding: 20px;
+}
+
+#col1 {
+    margin: 1vh;
+    background-color: blue;
+    color: white;
+    border-radius: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+#col2 {
+    margin: 1vh;
+    background-color: green;
+    
+    border-radius: 1vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+#outerDIv {
+    background-image: url('https://spacenews.com/wp-content/uploads/2018/05/24359364107_152b0152ff_k.jpg');
+}
