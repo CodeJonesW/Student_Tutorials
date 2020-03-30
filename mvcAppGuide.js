@@ -15,7 +15,7 @@
 // let sampleUser = new User("exampleemail", "exampeleuserName", "examplepassword")
 
 // this is the result of creating a new sequelize model >>
-// sampleUser = {
+// let sampleUser = {
 //     email: "exampleemail",
 //     username: "exampeleuserName",
 //     favoriteNumber: 2
