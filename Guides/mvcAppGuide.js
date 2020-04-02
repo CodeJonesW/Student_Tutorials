@@ -6,18 +6,18 @@
 
 // an example would be a restraunt lookup app
 
-// we will want people to be able to create user accounts
+// we will want our users to be able to create user accounts
 
 // therefore we should plan to have a user object model 
 
 // when have a sequelize model defined you an create a new instance of that model by saying
 
-// let sampleUser = new User("exampleemail", "exampeleuserName", "examplepassword")
+// let sampleUser = build User("exampleemail", "exampeleuserName", "2")
 
 // this is the result of creating a new sequelize model >>
 // let sampleUser = {
 //     email: "exampleemail",
-//     username: "exampeleuserName",
+//     userName: "exampeleuserName",
 //     favoriteNumber: 2
 // }
 
@@ -41,7 +41,7 @@
 
 // we now need to think about what other types of data objects we need to store for our application. repeat this process for each object model/table you plan on using in your application.
 
-// in our example application we will need a restraunt object model/table
+// in our example application we will need to create restraunt object model and db table
 
 // in my head i think a restraunt will need the keys id, location, name, cuisineCategory, menu, rating
 
@@ -52,7 +52,7 @@
 // create a file called controller and think about this as the puppeteer of data handling for your application.
 
 // in the controller we will define our routes which will use our
-// models to acquire info from the database and then render it into a view
+// models to acquire data from the database and then render the data object into a view
 
 // for example here we define a route that returns all the Users
 // app.get("api/users", function () {
@@ -60,12 +60,13 @@
     // return User.findAll()
 // })
 
-// now do this for all the routes you will need
+// now do this for all the routes you will need. generally CRUD
 
 // now you can make data requests from the front end using Javascript
 // create an HTML
 // link it to a Javascript file
-// create an event listener for a button
+// grab html element via the document and save as a variable
+// create an event listener for that said variable
 // inside event listener make an api call to the route you created on the backend. This can be done with ajax or the built in fetch function. Note that you must run your server via node in order to recieve a response from your route.
 
 // With your new response data render new information in your DOM
@@ -75,7 +76,7 @@
 // now you have an app!
 
 // M - Model = our sequelize models we created
-// V - View = we created an HTML page to display our information
+// V - View = we created an HTML page to display our information / alternatively create handlebars setup to render returned data to the dom via templates
 // C - Controller = controller file we created storing our routes
 
 // how we think about the view can change depending on the 

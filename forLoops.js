@@ -17,9 +17,11 @@ for (let i = 0; i < listOfPets.length; i++) {
     console.log(listOfPets[i])
 }
 
-for (let x = 1; x < 4; x++) {
+for (let x = 1; x < numbers.length; x++) {
     console.log(numbers[x])
 }
+
+
 
 
 
