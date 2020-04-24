@@ -1,10 +1,10 @@
 
 // We use SQL databases to store the pieces of information we use in our app
-// we do this storing one 1 of 6 datatypes
+// we can store all 6 of the datatypes
 // a SQL table looks alot like an excel spreadsheet
 // we have rows and we have columns
 // every row represents a new entry
-// the columns represent the attributes
+// the columns represent the attributes of each entry
 
 // in javascript our user object would look like this below 
 
