@@ -103,8 +103,9 @@ function changeEmail(userProfile, email) {
 const button1 = document.getElementById("myButton")
 const ageHTML = document.getElementById("ageHTMLElement")
 
+
 button1.addEventListener("click", function (e) {
-    // console.log(e)
+    console.log(button1)
     giveUserABirthday(userProfile1)
     ageHTML.innerHTML = userProfile1.age
 })
@@ -124,8 +125,14 @@ function changeColor(button) {
     button.setAttribute("style", { "color": "green" })
 }
 
+// .value vs .innerHTML
+const hello = document.getElementById("hi")
+const input = document.getElementById("input")
 
-
+window.addEventListener("load", function () {
+    hello.innerHTML = "steve"
+    input.value = 1
+})
 
 
 
