@@ -8,27 +8,34 @@
 var string1 = "this is a string!"
 var string2 = 'this is also a string!'
 
+
+
 // double quotes cannot go inside single quotes
 var string3 = "this is a 'a famous quote'"
 
 // console.log(string1 + string2)
 
+
+var pet = 'cat'
+var sentence = `my favorite pet is a ${pet}`
+
+// console.log(sentence)
+
+
 var newString = `this is a string using interpolation to reference a variable like ${string3}`
 // console.log(newString)
 
-let pet = 'cat'
-let sentence = `my favorite pet is a ${pet}`
-// console.log(sentence)
+
 
 // Arrays
 
-var pets = ['cat', 'dog', 'bird', 1, 2, 3]
+var pets = ['cat', 'dog', 'bird', 1, 2, 3, 0.6]
 
 // access array index
-// pets[5]
+// pets[0]
 // adds to end of the array
 var newPets = pets.push('alligator')
-// console.log(newPets)
+// console.log(pets)
 
 
 
@@ -56,21 +63,30 @@ let userProfile1 = {
     }
 }
 // Dot notation
-// console.log(userProfile1.instruments.guitars[0])
+// console.log(userProfile1.favoriteFoods[2], userProfile1.favoriteFoods[1])
 
 // bracket notation
-userProfile1['location']
+// console.log(userProfile1['location'])
+// console.log(userProfile1.location)
 
 let exampleVariable = "location"
 // userProfile1.location
 // console.log(userProfile1[exampleVariable])
+
+userProfile1.exampleVariable
 
 // console.log(userProfile1.favoriteFoods[0])
 
 
 // array of objects
 var array = [{ pet1: 'cat', pet2: 'bird' }, { pet1: 'giraffe' }, { pet1: 'dog' }]
-// console.log(array[1].pet1)
+// console.log(array[0].pet1)
+
+array[1].pet1 = "somethingNew"
+
+
+array.push({ newPet: "snake" })
+console.log(array)
 
 
 // arrays in arrays
@@ -100,15 +116,15 @@ function changeEmail(userProfile, email) {
 
 
 // this is just javscript 
-const button1 = document.getElementById("myButton")
-const ageHTML = document.getElementById("ageHTMLElement")
+// const button1 = document.getElementById("myButton")
+// const ageHTML = document.getElementById("ageHTMLElement")
 
 
-button1.addEventListener("click", function (e) {
-    console.log(button1)
-    giveUserABirthday(userProfile1)
-    ageHTML.innerHTML = userProfile1.age
-})
+// button1.addEventListener("click", function (e) {
+//     // console.log(button1)
+//     giveUserABirthday(userProfile1)
+//     ageHTML.innerHTML = userProfile1.age
+// })
 
 // this is jquery
 // $("myButton").click(function () {
@@ -116,23 +132,23 @@ button1.addEventListener("click", function (e) {
 //     ageHTML.innerHTML = userProfile1.age
 // })
 
-button1.addEventListener("onmouseover", function () {
-    changeColor(button1)
-})
+// button1.addEventListener("onmouseover", function () {
+//     changeColor(button1)
+// })
 
 
-function changeColor(button) {
-    button.setAttribute("style", { "color": "green" })
-}
+// function changeColor(button) {
+//     button.setAttribute("style", { "color": "green" })
+// }
 
-// .value vs .innerHTML
-const hello = document.getElementById("hi")
-const input = document.getElementById("input")
+// // .value vs .innerHTML
+// const hello = document.getElementById("hi")
+// const input = document.getElementById("input")
 
-window.addEventListener("load", function () {
-    hello.innerHTML = "steve"
-    input.value = 1
-})
+// window.addEventListener("load", function () {
+//     hello.innerHTML = "hello"
+//     input.value = 1
+// })
 
 
 
