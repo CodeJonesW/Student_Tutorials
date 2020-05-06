@@ -67,3 +67,30 @@ function resolveAfter2Seconds() {
   
   asyncCall();
   
+
+
+  // example of traditional fs readfile method
+const fs = require('fs');
+
+    fs.readFile('./index.js', 'utf8', (err, text) => {
+    if (err) {
+        console.log('Error', err);
+    } else {
+        console.log(text);
+    }
+});
+
+// example of promisified fs readfile method
+
+// const fs = require('fs');
+const util = require('util');
+const readFile = util.promisify(fs.readFile);
+readFile('./index.js', 'utf8')
+    .then((text) => {
+        console.log(text);
+    })
+    .catch((err) => {
+        console.log('Error', err);
+    });
+
+    
