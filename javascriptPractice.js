@@ -28,14 +28,18 @@ var newString = `this is a string using interpolation to reference a variable li
 
 
 // Arrays
-
+// arrays are like lists. Arrays can be filled with any data type.
 var pets = ['cat', 'dog', 'bird', 1, 2, 3, 0.6]
 
 // access array index
-// pets[0]
-// adds to end of the array
-var newPets = pets.push('alligator')
-// console.log(pets)
+// pets[3]
+
+
+// lots array methods available. learn as you grow
+// Array.push() method
+// adds an index to the end of an array
+pets.push('alligator')
+console.log(pets)
 
 
 
@@ -46,8 +50,7 @@ var newPets = pets.push('alligator')
 //Objects
 // object keys are actually strings if you analyze the data type
 // objects are not ordered numerically
-
-// objects are 
+// objects are made up of key value pairs
 
 
 let userProfile1 = {
@@ -86,7 +89,7 @@ array[1].pet1 = "somethingNew"
 
 
 array.push({ newPet: "snake" })
-console.log(array)
+// console.log(array)
 
 
 // arrays in arrays
