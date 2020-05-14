@@ -39,12 +39,20 @@ var pets = ['cat', 'dog', 'bird', 1, 2, 3, 0.6]
 // Array.push() method
 // adds an index to the end of an array
 pets.push('alligator')
-console.log(pets)
+// console.log(pets)
 
 
 
 // integers are whole numbers  1 , 2 , 3 , 123
 // floats are non whole numbers 0.983637 or 1.28373
+
+
+// Booleans
+
+let value1 = true
+let value2 = false
+
+// console.log(value1)
 
 
 //Objects
@@ -65,6 +73,16 @@ let userProfile1 = {
         keyboards: "native Instruments"
     }
 }
+
+
+// console.log(userProfile1)
+
+var cat = "cat"
+
+var myArray = [1, 2, 3, 4]
+
+// console.log(myArray)
+
 // Dot notation
 // console.log(userProfile1.favoriteFoods[2], userProfile1.favoriteFoods[1])
 
@@ -94,26 +112,52 @@ array.push({ newPet: "snake" })
 
 // arrays in arrays
 let tricky = [[1, 2], [3, 4], [5, 6]]
-// console.log(tricky[1][0])
+
+
+// console.log(tricky[2][1])
+
+
+
+function simpleFunction() {
+    console.log("Hello Coders")
+}
+
+// simpleFunction()
+
+
+function slightyComplicated(name) {
+    console.log("Hello " + name)
+}
+
+slightyComplicated("Will")
+
 
 
 // write a function to increase age
 function giveUserABirthday(userObject) {
-    // userObject = userObject + 1 
     // userObject.age = userObject.age + 1
-
-    userObject.age = userObject.age += 1
+    userObject.age += 1
 }
 
 // giveUserABirthday(userProfile1)
+
 // console.log(userProfile1)
 
-function changeEmail(userProfile, email) {
-    userProfile.email = email
+function changeEmail(userObject, emailInput) {
+    userObject.email = emailInput
 }
 
-// changeEmail(userProfile1, "newEmail@email.com")
-// console.log(userProfile1)
+changeEmail(userProfile1, "newEmail@email.com")
+console.log(userProfile1)
+
+
+function sillyName(numberInput) {
+    numberInput += 5
+
+    let newNumber = numberInput
+
+
+}
 
 
 
