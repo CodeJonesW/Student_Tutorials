@@ -2,6 +2,8 @@
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
 
+const NumberPrompt = require("inquirer/lib/prompts/number")
+
 // let vs const
 // use let when you intend to redefine variable and const for when you do not intend it to change.
 
@@ -152,11 +154,7 @@ console.log(userProfile1)
 
 
 function sillyName(numberInput) {
-    numberInput += 5
-
-    let newNumber = numberInput
-
-
+    console.log(numberInput + 5)
 }
 
 
