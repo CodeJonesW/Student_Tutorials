@@ -14,11 +14,11 @@ let numbers = [1, 2, 3, 4, 5, 6, 7]
 
 for (let i = 0; i < listOfPets.length; i++) {
     // here we use our i variable to access the array indexes 0 - 5)
-    // console.log(listOfPets[i])
+    console.log(listOfPets[i])
 }
 
-for (let cookie = 1; cookie < numbers.length; cookie++) {
-    console.log(numbers[cookie])
+for (let i = 1; i < numbers.length; i++) {
+    console.log(numbers[i])
 }
 
 

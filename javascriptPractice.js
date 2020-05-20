@@ -2,7 +2,7 @@
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
 
-const NumberPrompt = require("inquirer/lib/prompts/number")
+// const NumberPrompt = require("inquirer/lib/prompts/number")
 
 // let vs const
 // use let when you intend to redefine variable and const for when you do not intend it to change.
@@ -165,7 +165,7 @@ function sillyName(numberInput) {
 // const ageHTML = document.getElementById("ageHTMLElement")
 
 
-// button1.addEventListener("click", function (e) {
+// button1.addEventListener("click", function () {
 //     // console.log(button1)
 //     giveUserABirthday(userProfile1)
 //     ageHTML.innerHTML = userProfile1.age
