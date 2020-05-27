@@ -161,7 +161,7 @@ function sillyName(numberInput) {
 
 
 // this is just javscript 
-// const button1 = document.getElementById("myButton")
+const button1 = document.getElementById("myButton")
 // const ageHTML = document.getElementById("ageHTMLElement")
 
 
@@ -177,23 +177,24 @@ function sillyName(numberInput) {
 //     ageHTML.innerHTML = userProfile1.age
 // })
 
-// button1.addEventListener("onmouseover", function () {
-//     changeColor(button1)
-// })
+button1.addEventListener("onmouseover", function () {
+    changeColor(button1)
+})
 
 
-// function changeColor(button) {
-//     button.setAttribute("style", { "color": "green" })
-// }
+function changeColor(button) {
+    button.setAttribute("style", { "color": "green" })
+}
 
 // // .value vs .innerHTML
-// const hello = document.getElementById("hi")
-// const input = document.getElementById("input")
+const hello = document.getElementById("hi")
+const input = document.getElementById("input")
+const submitBtn = document.getElementById("submitBtn")
 
-// window.addEventListener("load", function () {
-//     hello.innerHTML = "hello"
-//     input.value = 1
-// })
+submitBtn.addEventListener("click", function () {
+    console.log(input.value)
+    hello.innerHTML = input.value
+})
 
 
 
