@@ -19,8 +19,8 @@ let myPet1 = "loulou the dog"
 let myPet2 = "Sam the Hamster"
 
 
-function sayHello(pet1, pet2) {
-    console.log(pet1 + " and " + pet2 + " say Hello!")
+function sayHello(x, y) {
+    console.log(x + " and " + y + " say Hello!")
 }
 
 

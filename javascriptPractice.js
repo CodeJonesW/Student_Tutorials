@@ -2,6 +2,8 @@
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
 
+// const NumberPrompt = require("inquirer/lib/prompts/number")
+
 // let vs const
 // use let when you intend to redefine variable and const for when you do not intend it to change.
 
@@ -152,22 +154,18 @@ console.log(userProfile1)
 
 
 function sillyName(numberInput) {
-    numberInput += 5
-
-    let newNumber = numberInput
-
-
+    console.log(numberInput + 5)
 }
 
 
 
 
 // this is just javscript 
-// const button1 = document.getElementById("myButton")
+const button1 = document.getElementById("myButton")
 // const ageHTML = document.getElementById("ageHTMLElement")
 
 
-// button1.addEventListener("click", function (e) {
+// button1.addEventListener("click", function () {
 //     // console.log(button1)
 //     giveUserABirthday(userProfile1)
 //     ageHTML.innerHTML = userProfile1.age
@@ -179,23 +177,24 @@ function sillyName(numberInput) {
 //     ageHTML.innerHTML = userProfile1.age
 // })
 
-// button1.addEventListener("onmouseover", function () {
-//     changeColor(button1)
-// })
+button1.addEventListener("onmouseover", function () {
+    changeColor(button1)
+})
 
 
-// function changeColor(button) {
-//     button.setAttribute("style", { "color": "green" })
-// }
+function changeColor(button) {
+    button.setAttribute("style", { "color": "green" })
+}
 
 // // .value vs .innerHTML
-// const hello = document.getElementById("hi")
-// const input = document.getElementById("input")
+const hello = document.getElementById("hi")
+const input = document.getElementById("input")
+const submitBtn = document.getElementById("submitBtn")
 
-// window.addEventListener("load", function () {
-//     hello.innerHTML = "hello"
-//     input.value = 1
-// })
+submitBtn.addEventListener("click", function () {
+    console.log(input.value)
+    hello.innerHTML = input.value
+})
 
 
 

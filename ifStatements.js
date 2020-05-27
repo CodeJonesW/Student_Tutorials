@@ -1,7 +1,6 @@
 var isHappy = true
 var isHungry = false
 
-isHappy = "anything"
 
 
 function checkMood() {
@@ -23,6 +22,6 @@ function checkMood2() {
 }
 
 
-checkMood()
+checkMood2()
 
 
