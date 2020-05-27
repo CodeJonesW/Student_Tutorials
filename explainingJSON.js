@@ -24,6 +24,6 @@ console.log("this is what JSON looks like: " + myJSON1)
 // Recieving Data
 // If you receive data in JSON format, you can convert it into a JavaScript object:
 
-var myJSON2 = '{"name":"John", "age":31, "city":"New York"}';
+var myJSON2 = '{"name":"William", "age":28, "country":"USA"}';
 var myProfileObj2 = JSON.parse(myJSON);
 console.log("This is my newly converted object: ", myProfileObj2)
