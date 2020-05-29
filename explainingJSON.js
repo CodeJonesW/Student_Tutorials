@@ -25,5 +25,31 @@ console.log("this is what JSON looks like: " + myJSON1)
 // If you receive data in JSON format, you can convert it into a JavaScript object:
 
 var myJSON2 = '{"name":"William", "age":28, "country":"USA"}';
-var myProfileObj2 = JSON.parse(myJSON);
+var myProfileObj2 = JSON.parse(myJSON2);
 console.log("This is my newly converted object: ", myProfileObj2)
+
+
+
+
+// In JSON, values must be one of the following data types:
+
+// a string
+// a number
+// an object (JSON object)
+// an array
+// a boolean
+// null
+// JSON values cannot be one of the following data types:
+
+// a function
+// a date
+// undefined
+
+// Strings in JSON must be written in double quotes.
+
+
+
+
+let myArray = [1, 2, 3, 4, 5, 6]
+
+
