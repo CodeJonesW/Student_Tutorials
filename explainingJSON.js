@@ -17,7 +17,7 @@
 // Sending Data
 // If you have data stored in a JavaScript object, you can convert the object into JSON, and send it to a server:
 
-var myProfleObj1 = { name: "William", age: 28, country: "USA" };
+var myProfleObj1 = { name: "William", age: 28, country: "USA" }
 var myJSON1 = JSON.stringify(myProfleObj1);
 console.log("this is what JSON looks like: " + myJSON1)
 
