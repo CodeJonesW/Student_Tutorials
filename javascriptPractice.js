@@ -4,10 +4,7 @@
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
 
-// const NumberPrompt = require("inquirer/lib/prompts/number")
 
-// let vs const
-// use let when you intend to redefine variable and const for when you do not intend it to change.
 
 var string1 = "this is a string!"
 var string2 = 'this is also a string!'
@@ -20,7 +17,7 @@ var string3 = "this is a 'a famous quote'"
 // console.log(string1 + string2)
 
 
-let pet = 'cat'
+var pet = 'cat'
 
 var sentence = `my favorite pet is a ${pet}`
 
@@ -54,10 +51,14 @@ pets.push('alligator')
 
 // Booleans
 
-let value1 = true
-let value2 = false
+var value1 = true
+var value2 = false
 
 // console.log(value1)
+
+// ES6 variable declaration (alternative to var)
+// let vs const
+// use let when you intend to redefine variable and const for when you do not intend it to change.
 
 
 //Objects
@@ -78,6 +79,7 @@ let userProfile1 = {
         keyboards: "native Instruments"
     }
 }
+// console.log(userProfile1.instruments.guitars[1])
 
 
 // console.log(userProfile1.instruments.guitars[1])
@@ -92,8 +94,9 @@ let userProfile1 = {
 // console.log(userProfile1.location)
 
 let exampleVariable = "location"
-// userProfile1.location
-// console.log(userProfile1[exampleVariable])
+
+// userProfile1.exampleVariable  <<< wont work 
+// console.log(userProfile1[exampleVariable]) <<< work will read value of variable as the string
 
 userProfile1.exampleVariable
 
@@ -102,12 +105,12 @@ userProfile1.exampleVariable
 
 // array of objects
 var array = [{ pet1: 'cat', pet2: 'bird' }, { pet1: 'giraffe' }, { pet1: 'dog' }]
-// console.log(array[1].pet1)
+// console.log(array[2].pet1)
 
 array[1].pet1 = "somethingNew"
 
 
-array.push({ newPet: "snake" })
+array.push({ pet1: "snake" })
 // console.log(array)
 
 
@@ -123,14 +126,14 @@ function simpleFunction() {
     console.log("Hello Coders")
 }
 
-simpleFunction()
+// simpleFunction()
 
 
-function slightyComplicated(name) {
-    console.log("Hello " + name)
+function slightyComplicated(nameString) {
+    console.log("Hello " + nameString)
 }
 
-slightyComplicated("Will")
+// slightyComplicated("Will")
 
 
 
@@ -140,9 +143,9 @@ function giveUserABirthday(userObject) {
     userObject.age += 1
 }
 
-// giveUserABirthday(userProfile1)
+giveUserABirthday(userProfile1)
 
-// console.log(userProfile1)
+console.log(userProfile1)
 
 function changeEmail(userObject, emailInput) {
     userObject.email = emailInput
