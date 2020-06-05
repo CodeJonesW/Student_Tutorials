@@ -14,9 +14,9 @@ class Animal {
     }
 }
 
-const willsPet = new Animal("Remi", "cat", 7)
+const UsersPet = new Animal("Remi", "cat", 7)
 
-// willsPet.introduceYourself()
-// console.log(willsPet)
+// UsersPet.introduceYourself()
+// console.log(UsersPet)
 
 module.exports = Animal
