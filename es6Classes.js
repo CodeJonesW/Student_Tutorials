@@ -1,4 +1,4 @@
-// create a new template for a "class" of objects
+// create a new constructor for a "class" of objects
 
 class Animal {
     // use constructor to create expected parameters
