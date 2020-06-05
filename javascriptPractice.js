@@ -1,9 +1,8 @@
-// data types
+// Data types
 
 
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
-
 
 
 var string1 = "this is a string!"
@@ -32,7 +31,7 @@ var newString = `this is a string using interpolation to reference a variable li
 // Arrays
 // arrays are like lists. Arrays can be filled with any data type.
 var pets = ['cat', 'dog', 'bird', 1, 2, 3, 0.6]
-
+pets[2]
 // access array index
 // pets[3]
 
@@ -68,7 +67,7 @@ var value2 = false
 
 
 let userProfile1 = {
-    name: "Will",
+    name: "William",
     email: "willjones@email.com",
     location: "USA",
     age: 27,
