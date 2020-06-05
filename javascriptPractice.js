@@ -70,7 +70,7 @@ let userProfile1 = {
     name: "William",
     email: "willjones@email.com",
     location: "USA",
-    age: 27,
+    age: 28,
     favoriteFoods: ['pizza', 'curry', 'icecream'],
     isHappy: true,
     instruments: {
@@ -132,6 +132,10 @@ function slightyComplicated(nameString) {
     console.log("Hello " + nameString)
 }
 
+// ES6 function
+const slightlyHardToRead = () => { console.log("hi") }
+
+
 // slightyComplicated("Will")
 
 
@@ -144,14 +148,14 @@ function giveUserABirthday(userObject) {
 
 giveUserABirthday(userProfile1)
 
-console.log(userProfile1)
+// console.log(userProfile1)
 
-function changeEmail(userObject, emailInput) {
-    userObject.email = emailInput
+function changeEmail(userObject, emailInputString) {
+    userObject.email = emailInputString
 }
 
 changeEmail(userProfile1, "newEmail@email.com")
-// console.log(userProfile1)
+console.log(userProfile1)
 
 
 function sillyName(numberInput) {
@@ -162,15 +166,17 @@ function sillyName(numberInput) {
 
 
 // this is just javscript 
-// const button1 = document.getElementById("myButton")
-// const ageHTML = document.getElementById("ageHTMLElement")
+const button1 = document.getElementById("myButton")
+const ageHTML = document.getElementById("ageHTMLElement")
 
 
-// button1.addEventListener("click", function () {
-//     // console.log(button1)
-//     giveUserABirthday(userProfile1)
-//     ageHTML.innerHTML = userProfile1.age
-// })
+button1.addEventListener("click", function () {
+    // console.log(button1)
+    giveUserABirthday(userProfile1)
+    ageHTML.innerHTML = userProfile1.age
+})
+
+
 
 // this is jquery
 // $("myButton").click(function () {
@@ -178,9 +184,9 @@ function sillyName(numberInput) {
 //     ageHTML.innerHTML = userProfile1.age
 // })
 
-// button1.addEventListener("onmouseover", function () {
-//     changeColor(button1)
-// })
+button1.addEventListener("onmouseover", function () {
+    changeColor(button1)
+})
 
 
 function changeColor(button) {
