@@ -78,7 +78,7 @@ let userProfile1 = {
         keyboards: "native Instruments"
     }
 }
-// console.log(userProfile1.instruments.guitars[1])
+// console.log(userProfile1.instruments.guitars[0])
 
 
 // console.log(userProfile1.instruments.guitars[1])
@@ -97,7 +97,7 @@ let exampleVariable = "location"
 // userProfile1.exampleVariable  <<< wont work 
 // console.log(userProfile1[exampleVariable]) <<< work will read value of variable as the string
 
-userProfile1.exampleVariable
+// userProfile1.exampleVariable
 
 // console.log(userProfile1.favoriteFoods[0])
 
@@ -136,7 +136,7 @@ function slightyComplicated(nameString) {
 const slightlyHardToRead = () => { console.log("hi") }
 
 
-// slightyComplicated("Will")
+slightyComplicated("Will")
 
 
 
@@ -155,7 +155,7 @@ function changeEmail(userObject, emailInputString) {
 }
 
 changeEmail(userProfile1, "newEmail@email.com")
-console.log(userProfile1)
+// console.log(userProfile1)
 
 
 function sillyName(numberInput) {
@@ -163,6 +163,14 @@ function sillyName(numberInput) {
 }
 
 
+let userProfile2 = {
+    name: "Bugs Bunny",
+    email: "BB@email.com",
+    location: "USA",
+    age: 62,
+    favoriteFoods: ['carrots', 'pizza', 'icecream'],
+    isHappy: true
+}
 
 
 // this is just javscript 
@@ -184,14 +192,14 @@ button1.addEventListener("click", function () {
 //     ageHTML.innerHTML = userProfile1.age
 // })
 
-button1.addEventListener("onmouseover", function () {
-    changeColor(button1)
-})
+// button1.addEventListener("onmouseover", function () {
+//     changeColor(button1)
+// })
 
 
-function changeColor(button) {
-    button.setAttribute("style", { "color": "green" })
-}
+// function changeColor(button) {
+//     button.setAttribute("style", { "color": "green" })
+// }
 
 // // .value vs .innerHTML
 // const hello = document.getElementById("hi")
