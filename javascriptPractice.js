@@ -5,7 +5,6 @@
 // strings, booleans, arrays, objects, integers, floats
 
 
-
 var string1 = "this is a string!"
 var string2 = 'this is also a string!'
 
@@ -24,13 +23,14 @@ var pet = 'cat'
 
 var sentence = `my favorite pet is a ${pet}`
 
+
 // console.log(sentence)
 
 
 // Arrays
 // arrays are like lists. Arrays can be filled with any data type.
 var pets = ['cat', 'dog', 'bird', 1, 2, 3]
-// console.log(pets[3])
+// console.log(pets[0])
 // access array index
 // pets[0]
 
@@ -51,7 +51,7 @@ let myNumber = 1
 
 // Booleans
 
-let lightsOn = false
+let loggedIn = false
 
 var value1 = true
 var value2 = false
@@ -86,7 +86,7 @@ let userProfile1 = {
     }
 }
 
-// console.log(userProfile1.instruments.guitars[0])
+// console.log(userProfile1.instruments.guitars[1])
 
 
 
@@ -100,7 +100,7 @@ let userProfile1 = {
 // console.log(userProfile1['location'])
 // console.log(userProfile1.location)
 
-// let exampleVariable = "location"
+let exampleVariable = "location"
 
 // userProfile1.exampleVariable  <<< wont work 
 
@@ -142,7 +142,7 @@ function simpleFunction() {
     console.log("Hello Coders")
 }
 
-// simpleFunction()
+simpleFunction()
 
 
 
@@ -167,7 +167,7 @@ function giveUserABirthday(userObject) {
     console.log(userObject)
 }
 
-// giveUserABirthday(userProfile1)
+giveUserABirthday(userProfile1)
 
 
 function changeEmail(userObject, emailInputString) {
@@ -175,14 +175,14 @@ function changeEmail(userObject, emailInputString) {
     console.log(userObject)
 }
 
-// changeEmail(userProfile1, "newEmail@email.com")
+changeEmail(userProfile1, "newEmail@email.com")
 
 
 
 function addFiveToANumber(numberInput) {
     console.log(numberInput + 5)
 }
-addFiveToANumber(20)
+// addFiveToANumber(20)
 
 
 

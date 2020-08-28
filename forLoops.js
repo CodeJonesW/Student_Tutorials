@@ -1,4 +1,4 @@
-let listOfPets = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
+
 
 // For Loops have 3 parameters
 // 1st parameter
@@ -9,19 +9,27 @@ let listOfPets = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
 // - how to manipulate the defined variable on each iteration of the loop
 
 
-let numbers = [1, 2, 3, 4, 5, 6, 7]
 
+let listOfPets = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
 
-for (let i = 2; i <= 12; i + 2) {
+for (let i = 0; i < listOfPets.length; i++) {
     // here we use our i variable to access the array indexes 0 - 5)
-    console.log(i, listOfPets[i])
+    console.log(listOfPets[i])
 }
 
-// for (let i = 1; i < numbers.length; i++) {
-//     console.log(numbers[i])
-// }
+
+let numbers = [1, 2, 3, 4, 5, 6, 7]
+for (let i = 1; i < numbers.length; i++) {
+    console.log(numbers[i])
+}
 
 
 
+function animalDemo(nameOfAnimal) {
+    //              ^ paramenter
+    console.log("My pet is " + nameOfAnimal)
+    //               
+}
 
-
+// animalDemo("Era")
+//           ^ argument
