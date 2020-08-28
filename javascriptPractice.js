@@ -5,8 +5,12 @@
 // strings, booleans, arrays, objects, integers, floats
 
 
+
 var string1 = "this is a string!"
 var string2 = 'this is also a string!'
+
+
+
 
 
 
@@ -23,26 +27,23 @@ var sentence = `my favorite pet is a ${pet}`
 // console.log(sentence)
 
 
-var newString = `this is a string using interpolation to reference a variable like ${string3}`
-// console.log(newString)
-
-
-
 // Arrays
 // arrays are like lists. Arrays can be filled with any data type.
-var pets = ['cat', 'dog', 'bird', 1, 2, 3, 0.6]
-pets[2]
+var pets = ['cat', 'dog', 'bird', 1, 2, 3]
+// console.log(pets[3])
 // access array index
-// pets[3]
+// pets[0]
+
 
 
 // lots array methods available. learn as you grow
 // Array.push() method
 // adds an index to the end of an array
 pets.push('alligator')
+
 // console.log(pets)
 
-
+let myNumber = 1
 
 // integers are whole numbers  1 , 2 , 3 , 123
 // floats are non whole numbers 0.983637 or 1.28373
@@ -50,14 +51,20 @@ pets.push('alligator')
 
 // Booleans
 
+let lightsOn = false
+
 var value1 = true
 var value2 = false
+
+
 
 // console.log(value1)
 
 // ES6 variable declaration (alternative to var)
 // let vs const
 // use let when you intend to redefine variable and const for when you do not intend it to change.
+
+
 
 
 //Objects
@@ -78,24 +85,27 @@ let userProfile1 = {
         keyboards: "native Instruments"
     }
 }
+
 // console.log(userProfile1.instruments.guitars[0])
 
 
-// console.log(userProfile1.instruments.guitars[1])
+
 
 // console.log(myArray)
 
 // Dot notation
-// console.log(userProfile1.favoriteFoods[2], userProfile1.favoriteFoods[1])
+// console.log("This is the value", userProfile1.favoriteFoods[2], "this is the array", userProfile1.favoriteFoods)
 
 // bracket notation
 // console.log(userProfile1['location'])
 // console.log(userProfile1.location)
 
-let exampleVariable = "location"
+// let exampleVariable = "location"
 
 // userProfile1.exampleVariable  <<< wont work 
-// console.log(userProfile1[exampleVariable]) <<< work will read value of variable as the string
+
+// console.log(userProfile1[exampleVariable])
+// <<< works will read value of variable as the string
 
 // userProfile1.exampleVariable
 
@@ -103,21 +113,28 @@ let exampleVariable = "location"
 
 
 // array of objects
-var array = [{ pet1: 'cat', pet2: 'bird' }, { pet1: 'giraffe' }, { pet1: 'dog' }]
-// console.log(array[2].pet1)
+var array = [
+    { pet1: 'cat', pet2: 'monkey' },
+    { pet1: 'giraffe', pet2: 'alligator' },
+    { pet1: 'dog', pet2: 'squirrel' }
+]
 
-array[1].pet1 = "somethingNew"
+// console.log(array[0].pet1)
 
 
-array.push({ pet1: "snake" })
+array[2].pet1 = "newSnake"
+
+// console.log(array)
+
+array.push({ pet1: "newPet" })
 // console.log(array)
 
 
 // arrays in arrays
-let tricky = [[1, 2], [3, 4], [5, 6]]
+var tricky = [[1, 2], [3, 4], [5, 6]]
 
 
-// console.log(tricky[2][0])
+// console.log(tricky[0][1])
 
 
 
@@ -128,49 +145,46 @@ function simpleFunction() {
 // simpleFunction()
 
 
+
 function slightyComplicated(nameString) {
     console.log("Hello " + nameString)
 }
+
+// slightyComplicated("Sally")
 
 // ES6 function
 const slightlyHardToRead = () => { console.log("hi") }
 
 
-slightyComplicated("Will")
+
 
 
 
 // write a function to increase age
 function giveUserABirthday(userObject) {
-    // userObject.age = userObject.age + 1
-    userObject.age += 1
+    userObject.age = userObject.age + 1
+    // userObject.age += 1
+    console.log(userObject)
 }
 
-giveUserABirthday(userProfile1)
+// giveUserABirthday(userProfile1)
 
-// console.log(userProfile1)
 
 function changeEmail(userObject, emailInputString) {
     userObject.email = emailInputString
+    console.log(userObject)
 }
 
-changeEmail(userProfile1, "newEmail@email.com")
-// console.log(userProfile1)
+// changeEmail(userProfile1, "newEmail@email.com")
 
 
-function sillyName(numberInput) {
+
+function addFiveToANumber(numberInput) {
     console.log(numberInput + 5)
 }
+addFiveToANumber(20)
 
 
-let userProfile2 = {
-    name: "Bugs Bunny",
-    email: "BB@email.com",
-    location: "USA",
-    age: 62,
-    favoriteFoods: ['carrots', 'pizza', 'icecream'],
-    isHappy: true
-}
 
 
 // this is just javscript 
@@ -178,8 +192,10 @@ const button1 = document.getElementById("myButton")
 const ageHTML = document.getElementById("ageHTMLElement")
 
 
-button1.addEventListener("click", function () {
+button1.addEventListener("click", function (e) {
+    // console.log(e)
     // console.log(button1)
+    // console.log(ageHTML)
     giveUserABirthday(userProfile1)
     ageHTML.innerHTML = userProfile1.age
 })

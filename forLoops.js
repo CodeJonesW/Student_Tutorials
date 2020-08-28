@@ -12,9 +12,9 @@ let listOfPets = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
 let numbers = [1, 2, 3, 4, 5, 6, 7]
 
 
-for (let i = 0; i < listOfPets.length; i++) {
+for (let i = 2; i <= 12; i + 2) {
     // here we use our i variable to access the array indexes 0 - 5)
-    console.log(listOfPets[i])
+    console.log(i, listOfPets[i])
 }
 
 // for (let i = 1; i < numbers.length; i++) {
