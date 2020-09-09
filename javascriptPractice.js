@@ -16,12 +16,10 @@ var string2 = 'this is also a string!'
 // double quotes cannot go inside single quotes
 var string3 = "this is a 'a famous quote'"
 
-// console.log(string1 + string2)
-
 
 var pet = 'cat'
 
-var sentence = `my favorite pet is a ${pet}`
+var sentence = `my favorite pet is a ${string3}`
 
 
 // console.log(sentence)
@@ -30,7 +28,7 @@ var sentence = `my favorite pet is a ${pet}`
 // Arrays
 // arrays are like lists. Arrays can be filled with any data type.
 var pets = ['cat', 'dog', 'bird', 1, 2, 3]
-// console.log(pets[0])
+// console.log(pets[3])
 // access array index
 // pets[0]
 
@@ -43,7 +41,7 @@ pets.push('alligator')
 
 // console.log(pets)
 
-let myNumber = 1
+var myNumber = 1
 
 // integers are whole numbers  1 , 2 , 3 , 123
 // floats are non whole numbers 0.983637 or 1.28373
@@ -51,7 +49,7 @@ let myNumber = 1
 
 // Booleans
 
-let loggedIn = false
+var loggedIn = false
 
 var value1 = true
 var value2 = false
@@ -86,7 +84,14 @@ let userProfile1 = {
     }
 }
 
-// console.log(userProfile1.instruments.guitars[1])
+var newUser = {
+    name: "Shelly",
+    email: "shelly@gmail.com",
+    location: "california",
+    age: 26,
+    isHappy: true
+}
+
 
 
 
@@ -113,20 +118,20 @@ let exampleVariable = "location"
 
 
 // array of objects
-var array = [
+var arrayOfObjects = [
     { pet1: 'cat', pet2: 'monkey' },
     { pet1: 'giraffe', pet2: 'alligator' },
     { pet1: 'dog', pet2: 'squirrel' }
 ]
 
-// console.log(array[0].pet1)
+// console.log(arrayOfObjects[1].pet2)
 
 
-array[2].pet1 = "newSnake"
+arrayOfObjects[2].pet1 = "newSnake"
 
-// console.log(array)
+// console.log(arrayOfObjects)
 
-array.push({ pet1: "newPet" })
+arrayOfObjects.push({ pet1: "newPet" })
 // console.log(array)
 
 
@@ -134,7 +139,7 @@ array.push({ pet1: "newPet" })
 var tricky = [[1, 2], [3, 4], [5, 6]]
 
 
-// console.log(tricky[0][1])
+
 
 
 
@@ -142,7 +147,7 @@ function simpleFunction() {
     console.log("Hello Coders")
 }
 
-simpleFunction()
+// simpleFunction()
 
 
 
@@ -167,7 +172,7 @@ function giveUserABirthday(userObject) {
     console.log(userObject)
 }
 
-giveUserABirthday(userProfile1)
+// giveUserABirthday(newUser)
 
 
 function changeEmail(userObject, emailInputString) {
@@ -188,8 +193,8 @@ function addFiveToANumber(numberInput) {
 
 
 // this is just javscript 
-const button1 = document.getElementById("myButton")
-const ageHTML = document.getElementById("ageHTMLElement")
+var button1 = document.getElementById("myButton")
+var ageHTML = document.getElementById("ageHTMLElement")
 
 
 button1.addEventListener("click", function (e) {
