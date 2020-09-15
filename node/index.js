@@ -4,8 +4,8 @@
 // arguments passed from the command line are accessed by index
 // console.log("Hello ", process.argv[2]);
 
-var a = process.argv[2];
-var b = process.argv[3];
+// var a = process.argv[2];
+// var b = process.argv[3];
 
 // using a conditional statement
 // if (a === b) {

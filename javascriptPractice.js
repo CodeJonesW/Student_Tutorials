@@ -19,7 +19,7 @@ var string3 = "this is a 'a famous quote'"
 
 var pet = 'cat'
 
-var sentence = `my favorite pet is a ${string3}`
+var sentence = `my favorite pet is a ${pet}`
 
 
 // console.log(sentence)
@@ -84,6 +84,8 @@ let userProfile1 = {
     }
 }
 
+console.log(userProfile1.instruments.guitars[0])
+
 var newUser = {
     name: "Shelly",
     email: "shelly@gmail.com",
@@ -124,7 +126,7 @@ var arrayOfObjects = [
     { pet1: 'dog', pet2: 'squirrel' }
 ]
 
-// console.log(arrayOfObjects[1].pet2)
+console.log(arrayOfObjects[1].pet2)
 
 
 arrayOfObjects[2].pet1 = "newSnake"
@@ -132,7 +134,7 @@ arrayOfObjects[2].pet1 = "newSnake"
 // console.log(arrayOfObjects)
 
 arrayOfObjects.push({ pet1: "newPet" })
-// console.log(array)
+console.log(arrayOfObjects)
 
 
 // arrays in arrays
@@ -180,7 +182,7 @@ function changeEmail(userObject, emailInputString) {
     console.log(userObject)
 }
 
-changeEmail(userProfile1, "newEmail@email.com")
+// changeEmail(userProfile1, "newEmail@email.com")
 
 
 
@@ -193,17 +195,17 @@ function addFiveToANumber(numberInput) {
 
 
 // this is just javscript 
-var button1 = document.getElementById("myButton")
-var ageHTML = document.getElementById("ageHTMLElement")
+// var button1 = document.getElementById("myButton")
+// var ageHTML = document.getElementById("ageHTMLElement")
 
 
-button1.addEventListener("click", function (e) {
-    // console.log(e)
-    // console.log(button1)
-    // console.log(ageHTML)
-    giveUserABirthday(userProfile1)
-    ageHTML.innerHTML = userProfile1.age
-})
+// button1.addEventListener("click", function (e) {
+//     // console.log(e)
+//     // console.log(button1)
+//     // console.log(ageHTML)
+//     giveUserABirthday(userProfile1)
+//     ageHTML.innerHTML = userProfile1.age
+// })
 
 
 

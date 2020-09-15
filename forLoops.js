@@ -12,24 +12,30 @@
 
 let listOfPets = ['cat', 'dog', 'fish', 'bird', 'alligator', 'monkey']
 
-for (let i = 0; i < listOfPets.length; i++) {
-    // here we use our i variable to access the array indexes 0 - 5)
-    console.log(listOfPets[i])
-}
+// for (let i = 0; i < listOfPets.length; i++) {
+// here we use our i variable to access the array indexes 0 - 5)
+// console.log(i, listOfPets[i])
+
+// if (listOfPets[i] === "fish") {
+//     console.log("fishy")
+// } else {
+//     console.log("No fish")
+// }
+// }
 
 
-let numbers = [1, 2, 3, 4, 5, 6, 7]
-for (let i = 1; i < numbers.length; i++) {
-    console.log(numbers[i])
-}
+// let numbers = [1, 2, 3, 4, 5, 6, 7]
+// for (let i = 0; i < numbers.length; i++) {
+//     console.log(numbers[i])
+// }
 
 
 
 function animalDemo(nameOfAnimal) {
     //              ^ paramenter
-    console.log("My pet is " + nameOfAnimal)
+    console.log("My pet cat's name is " + nameOfAnimal)
     //               
 }
 
-// animalDemo("Era")
+animalDemo("Era")
 //           ^ argument
