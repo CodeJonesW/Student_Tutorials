@@ -84,15 +84,9 @@ let userProfile1 = {
     }
 }
 
-console.log(userProfile1.instruments.guitars[0])
+// console.log(userProfile1.instruments.guitars[0])
 
-var newUser = {
-    name: "Shelly",
-    email: "shelly@gmail.com",
-    location: "california",
-    age: 26,
-    isHappy: true
-}
+
 
 
 
@@ -103,11 +97,11 @@ var newUser = {
 // Dot notation
 // console.log("This is the value", userProfile1.favoriteFoods[2], "this is the array", userProfile1.favoriteFoods)
 
-// bracket notation
+// // bracket notation
 // console.log(userProfile1['location'])
 // console.log(userProfile1.location)
 
-let exampleVariable = "location"
+let exampleVariable = "age"
 
 // userProfile1.exampleVariable  <<< wont work 
 
@@ -126,7 +120,7 @@ var arrayOfObjects = [
     { pet1: 'dog', pet2: 'squirrel' }
 ]
 
-console.log(arrayOfObjects[1].pet2)
+// console.log(arrayOfObjects[1].pet2)
 
 
 arrayOfObjects[2].pet1 = "newSnake"
@@ -134,7 +128,7 @@ arrayOfObjects[2].pet1 = "newSnake"
 // console.log(arrayOfObjects)
 
 arrayOfObjects.push({ pet1: "newPet" })
-console.log(arrayOfObjects)
+// console.log(arrayOfObjects)
 
 
 // arrays in arrays
@@ -142,7 +136,7 @@ var tricky = [[1, 2], [3, 4], [5, 6]]
 
 
 
-
+// console.log(tricky[1][0])
 
 
 function simpleFunction() {
@@ -157,13 +151,19 @@ function slightyComplicated(nameString) {
     console.log("Hello " + nameString)
 }
 
-// slightyComplicated("Sally")
+// slightyComplicated("Will")
 
 // ES6 function
 const slightlyHardToRead = () => { console.log("hi") }
 
 
-
+var newUser = {
+    name: "Shelly",
+    email: "shelly@gmail.com",
+    location: "california",
+    age: 26,
+    isHappy: true
+}
 
 
 
@@ -182,7 +182,7 @@ function changeEmail(userObject, emailInputString) {
     console.log(userObject)
 }
 
-// changeEmail(userProfile1, "newEmail@email.com")
+// changeEmail(newUser, "newEmail@email.com")
 
 
 
@@ -195,18 +195,22 @@ function addFiveToANumber(numberInput) {
 
 
 // this is just javscript 
-// var button1 = document.getElementById("myButton")
-// var ageHTML = document.getElementById("ageHTMLElement")
-
+var button1 = document.getElementById("myButton")
+var ageHTML = document.getElementById("ageHTMLElement")
+console.log(button1, ageHTML)
 
 // button1.addEventListener("click", function (e) {
 //     // console.log(e)
 //     // console.log(button1)
 //     // console.log(ageHTML)
-//     giveUserABirthday(userProfile1)
-//     ageHTML.innerHTML = userProfile1.age
+//     giveUserABirthday(newUser)
+//     ageHTML.innerHTML = newUser.age
 // })
 
+// creating html elements with js and appending
+let myElement = document.createElement("p")
+ageHTML.append(myElement)
+ageHTML.prepend(myElement)
 
 
 // this is jquery
