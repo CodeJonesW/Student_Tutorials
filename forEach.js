@@ -7,7 +7,7 @@
 const students = ["Sam", "Larry", "Kim", "Aiesha", "Susan", "Blake"]
 let numOfLoops = 0
 
-students.forEach((student) => {
+students.forEach(function (student) {
     console.log(student)
     numOfLoops++
 })

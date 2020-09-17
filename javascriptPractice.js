@@ -11,8 +11,6 @@ var string2 = 'this is also a string!'
 
 
 
-
-
 // double quotes cannot go inside single quotes
 var string3 = "this is a 'a famous quote'"
 
@@ -71,7 +69,7 @@ var value2 = false
 // objects are made up of key value pairs
 
 
-let userProfile1 = {
+var userProfile1 = {
     name: "William",
     email: "willjones@email.com",
     location: "USA",
@@ -101,11 +99,12 @@ let userProfile1 = {
 // console.log(userProfile1['location'])
 // console.log(userProfile1.location)
 
-let exampleVariable = "age"
+let exampleVariable = "location"
 
 // userProfile1.exampleVariable  <<< wont work 
 
 // console.log(userProfile1[exampleVariable])
+
 // <<< works will read value of variable as the string
 
 // userProfile1.exampleVariable
@@ -139,19 +138,28 @@ var tricky = [[1, 2], [3, 4], [5, 6]]
 // console.log(tricky[1][0])
 
 
+
+
 function simpleFunction() {
     console.log("Hello Coders")
 }
 
 // simpleFunction()
 
+// function animalDemo(nameOfAnimal) {
+//     //              ^ paramenter
+//     console.log("My pet cat's name is " + nameOfAnimal)
+//     //               
+// }
 
+// animalDemo("Era")
+//           ^ argument
 
 function slightyComplicated(nameString) {
     console.log("Hello " + nameString)
 }
-
-// slightyComplicated("Will")
+let name = "sally"
+// slightyComplicated(name)
 
 // ES6 function
 const slightlyHardToRead = () => { console.log("hi") }
@@ -160,7 +168,7 @@ const slightlyHardToRead = () => { console.log("hi") }
 var newUser = {
     name: "Shelly",
     email: "shelly@gmail.com",
-    location: "california",
+    location: "California",
     age: 26,
     isHappy: true
 }
@@ -189,9 +197,13 @@ function changeEmail(userObject, emailInputString) {
 function addFiveToANumber(numberInput) {
     console.log(numberInput + 5)
 }
-// addFiveToANumber(20)
+// let success = addFiveToANumber(20)
 
+let newArray = [1, 2, 3]
 
+let count = newArray.push(4)
+
+// console.log(success)
 
 
 // this is just javscript 
@@ -199,18 +211,18 @@ var button1 = document.getElementById("myButton")
 var ageHTML = document.getElementById("ageHTMLElement")
 console.log(button1, ageHTML)
 
-// button1.addEventListener("click", function (e) {
-//     // console.log(e)
-//     // console.log(button1)
-//     // console.log(ageHTML)
-//     giveUserABirthday(newUser)
-//     ageHTML.innerHTML = newUser.age
-// })
+button1.addEventListener("click", function (e) {
+    // console.log(e)
+    // console.log(button1)
+    // console.log(ageHTML)
+    giveUserABirthday(newUser)
+    ageHTML.innerHTML = newUser.age
+})
 
 // creating html elements with js and appending
-let myElement = document.createElement("p")
-ageHTML.append(myElement)
-ageHTML.prepend(myElement)
+// let myElement = document.createElement("p")
+// ageHTML.append(myElement)
+// ageHTML.prepend(myElement)
 
 
 // this is jquery
