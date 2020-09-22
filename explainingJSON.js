@@ -19,7 +19,7 @@
 
 var myProfleObj1 = { name: "William", age: 28, country: "USA" }
 var myJSON1 = JSON.stringify(myProfleObj1);
-console.log("this is what JSON looks like: " + myJSON1)
+// console.log("this is what JSON looks like: " + myJSON1)
 
 // Recieving Data
 // If you receive data in JSON format, you can convert it into a JavaScript object:
