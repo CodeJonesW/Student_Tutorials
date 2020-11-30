@@ -1,6 +1,4 @@
 // Data types
-
-
 // in terminal use node *filename to run file to test with console.log()
 // strings, booleans, arrays, objects, integers, floats
 
@@ -26,7 +24,7 @@ var sentence = `my favorite pet is a ${pet}`
 // Arrays
 // arrays are like lists. Arrays can be filled with any data type.
 var pets = ['cat', 'dog', 'bird', 1, 2, 3]
-// console.log(pets[3])
+// console.log(pets[0])
 // access array index
 // pets[0]
 
@@ -63,7 +61,7 @@ var value2 = false
 
 
 
-//Objects
+// Objects
 // object keys are actually strings if you analyze the data type
 // objects are not ordered numerically
 // objects are made up of key value pairs
@@ -83,6 +81,38 @@ var userProfile1 = {
 }
 
 // console.log(userProfile1.instruments.guitars[0])
+
+// let list = [
+//     {
+//         name: "William",
+//         email: "willjones@email.com",
+//         location: "USA",
+//         age: 28,
+//         favoriteFoods: ['pizza', 'curry', 'icecream'],
+//         isHappy: true,
+//         instruments: {
+//             guitars: ["esp", "fender"],
+//             keyboards: "native Instruments"
+//         }
+//     },
+//     {
+//         name: "William",
+//         email: "willjones@email.com",
+//         location: "USA",
+//         age: 28,
+//         favoriteFoods: ['pizza', 'curry', 'icecream'],
+//         isHappy: true,
+//         instruments: {
+//             guitars: ["esp", "fender"],
+//             keyboards: "native Instruments"
+//         }
+//     }
+// ]
+
+
+// for (let i = 0; i < list.length; i++) {
+//     console.log(list[i].name)
+// }
 
 
 
@@ -112,30 +142,28 @@ let exampleVariable = "location"
 // console.log(userProfile1.favoriteFoods[0])
 
 
-// array of objects
-var arrayOfObjects = [
-    { pet1: 'cat', pet2: 'monkey' },
-    { pet1: 'giraffe', pet2: 'alligator' },
-    { pet1: 'dog', pet2: 'squirrel' }
-]
 
-// console.log(arrayOfObjects[1].pet2)
+// array of objects
+var arrayOfObjects = [{ pet1: 'cat', pet2: 'monkey' }, { pet1: 'giraffe', pet2: 'alligator' }, { pet1: 'dog', pet2: 'squirrel' }]
+
+// console.log(arrayOfObjects[2].pet2)
+
+
 
 
 arrayOfObjects[2].pet1 = "newSnake"
 
-// console.log(arrayOfObjects)
+// console.log("first console log", arrayOfObjects)
 
-arrayOfObjects.push({ pet1: "newPet" })
-// console.log(arrayOfObjects)
+
+arrayOfObjects.push({ pet1: "newPet", pet2: "monkey" })
+// console.log("SECOND", arrayOfObjects)
 
 
 // arrays in arrays
 var tricky = [[1, 2], [3, 4], [5, 6]]
 
-
-
-// console.log(tricky[1][0])
+// console.log(tricky[1][1])
 
 
 
@@ -155,11 +183,35 @@ function simpleFunction() {
 // animalDemo("Era")
 //           ^ argument
 
+
+
+
+
+
 function slightyComplicated(nameString) {
+    console.log(nameString)
     console.log("Hello " + nameString)
+    return "this is the return value"
 }
-let name = "sally"
-// slightyComplicated(name)
+
+// slightyComplicated("Sally")
+
+
+// var person = { name: "Sally" }
+
+// var myReturnedValue = slightyComplicated("Sally")
+
+
+// console.log("this", myReturnedValue)
+
+let newArray = [1, 2, 3]
+
+let length = newArray.push(4)
+
+console.log(length)
+
+
+
 
 // ES6 function
 const slightlyHardToRead = () => { console.log("hi") }
@@ -173,20 +225,18 @@ var newUser = {
     isHappy: true
 }
 
-
-
 // write a function to increase age
 function giveUserABirthday(userObject) {
     userObject.age = userObject.age + 1
     // userObject.age += 1
-    console.log(userObject)
+    console.log(`Happy Birthday! ${userObject.name} you are ${userObject.age}!`)
 }
 
 // giveUserABirthday(newUser)
 
 
-function changeEmail(userObject, emailInputString) {
-    userObject.email = emailInputString
+function changeEmail(userObject, emailString) {
+    userObject.email = emailString
     console.log(userObject)
 }
 
@@ -194,29 +244,87 @@ function changeEmail(userObject, emailInputString) {
 
 
 
+
+
 function addFiveToANumber(numberInput) {
     console.log(numberInput + 5)
 }
-// let success = addFiveToANumber(20)
+// addFiveToANumber(20)
 
-let newArray = [1, 2, 3]
 
-let count = newArray.push(4)
 
-// console.log(success)
+
+
+
+var user1 = {
+    name: "Bill",
+    email: "adsf",
+    location: "California",
+    age: 26,
+    isHappy: true
+}
+
+var user2 = {
+    name: "Bob",
+    email: "asdf",
+    location: "California",
+    age: 26,
+    isHappy: true
+}
 
 
 // this is just javscript 
 var button1 = document.getElementById("myButton")
-var ageHTML = document.getElementById("ageHTMLElement")
+var ageHTML = document.getElementById("myAge")
+var choicesDiv = document.getElementById("choicesDiv")
+var textInput = document.getElementById("text")
+var bill = document.getElementById("bill")
+var bob = document.getElementById("bob")
 console.log(button1, ageHTML)
 
+
+var elements = document.getElementsByClassName("character");
+console.log(elements)
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function (e) {
+        var clickedPerson = e.target.innerText
+
+        if (clickedPerson === "Bob") {
+            giveUserABirthday(user2)
+            var myElement = document.createElement("p")
+            myElement.innerText = user2.age
+            ageHTML.append(myElement)
+        } else {
+            giveUserABirthday(user1)
+        }
+    });
+}
+
+// var myFunction = function () {
+//     var attribute = this.getAttribute("data-myattribute");
+//     alert(attribute);
+// };
+
+// for (var i = 0; i < elements.length; i++) {
+//     elements[i].addEventListener('click', myFunction, false);
+// }
+
+
+
+
+
 button1.addEventListener("click", function (e) {
-    // console.log(e)
-    // console.log(button1)
-    // console.log(ageHTML)
+    console.log(e)
+    // e.preventDefault()
+
+
     giveUserABirthday(newUser)
     ageHTML.innerHTML = newUser.age
+
+
+    // let newText = document.createElement("p")
+    // newText.innerHTML = textInput.value
+    // choicesDiv.append(newText)
 })
 
 // creating html elements with js and appending
@@ -249,6 +357,7 @@ button1.addEventListener("click", function (e) {
 //     console.log(input.value)
 //     hello.innerHTML = input.value
 // })
+
 
 
 

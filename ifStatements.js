@@ -12,6 +12,7 @@ function checkMood() {
         console.log("otherwise do this")
     }
 }
+checkMood()
 
 function checkMood2() {
     if (isHappy === true) {

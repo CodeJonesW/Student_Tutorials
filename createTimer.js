@@ -19,16 +19,33 @@
 
 
 
+let htmlElement = document.getElementById("timer")
 
-
-let time = 0
+let time = 100
 
 // every second we want to increase the timer by 1
 
 function increaseTime() {
     // time = time + 1
-    time++
-    console.log(time)
+    time--
+
+    let functionScope = "will"
+
+    if (time === 0) {
+        let ifScope = 'hello'
+        clearInterval(timer)
+
+    }
+    console.log()
 }
 
-setInterval(increaseTime, 1000)
+// setInterval(increaseTime, 1000)
+
+let timer = setInterval(function () {
+    console.log(time)
+    increaseTime()
+    htmlElement.innerHTML = time
+}, 1000)
+
+
+

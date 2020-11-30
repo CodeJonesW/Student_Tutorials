@@ -2,10 +2,18 @@
 var movie = "Star Wars";
 var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
 
+// create an input html element
+// save that element to a variable
+// listen for a click on a submit button to search
+// when clicked grab the value of the input
+// save to a variable
+// use that variable to construct query url
+
 $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function (response) {
+    console.log(response)
     // Create a new table row element
     var tRow = $("<tr>");
 
