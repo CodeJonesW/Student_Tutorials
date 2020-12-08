@@ -80,7 +80,7 @@ var userProfile1 = {
     }
 }
 
-// console.log(userProfile1.instruments.guitars[0])
+// console.log(userProfile1.name)
 
 // let list = [
 //     {
@@ -146,7 +146,7 @@ let exampleVariable = "location"
 // array of objects
 var arrayOfObjects = [{ pet1: 'cat', pet2: 'monkey' }, { pet1: 'giraffe', pet2: 'alligator' }, { pet1: 'dog', pet2: 'squirrel' }]
 
-// console.log(arrayOfObjects[2].pet2)
+// console.log(arrayOfObjects[1].pet1)
 
 
 
@@ -157,7 +157,7 @@ arrayOfObjects[2].pet1 = "newSnake"
 
 
 arrayOfObjects.push({ pet1: "newPet", pet2: "monkey" })
-// console.log("SECOND", arrayOfObjects)
+// console.log("SECOND", arrayOfObjects)   
 
 
 // arrays in arrays
@@ -189,7 +189,6 @@ function simpleFunction() {
 
 
 function slightyComplicated(nameString) {
-    console.log(nameString)
     console.log("Hello " + nameString)
     return "this is the return value"
 }
@@ -199,16 +198,16 @@ function slightyComplicated(nameString) {
 
 // var person = { name: "Sally" }
 
-// var myReturnedValue = slightyComplicated("Sally")
+var myReturnedValue = slightyComplicated("Sally")
 
 
 // console.log("this", myReturnedValue)
 
-let newArray = [1, 2, 3]
+let newArray = ["cat", "dog", "bird"]
 
-let length = newArray.push(4)
+let removedElement = newArray.pop()
 
-console.log(length)
+//            
 
 
 
@@ -256,23 +255,6 @@ function addFiveToANumber(numberInput) {
 
 
 
-var user1 = {
-    name: "Bill",
-    email: "adsf",
-    location: "California",
-    age: 26,
-    isHappy: true
-}
-
-var user2 = {
-    name: "Bob",
-    email: "asdf",
-    location: "California",
-    age: 26,
-    isHappy: true
-}
-
-
 // this is just javscript 
 var button1 = document.getElementById("myButton")
 var ageHTML = document.getElementById("myAge")
@@ -280,25 +262,17 @@ var choicesDiv = document.getElementById("choicesDiv")
 var textInput = document.getElementById("text")
 var bill = document.getElementById("bill")
 var bob = document.getElementById("bob")
-console.log(button1, ageHTML)
+// console.log(button1, ageHTML)
 
 
-var elements = document.getElementsByClassName("character");
-console.log(elements)
-for (var i = 0; i < elements.length; i++) {
-    elements[i].addEventListener('click', function (e) {
-        var clickedPerson = e.target.innerText
+// button1.addEventListener("click", function (e) {
+//     console.log(e)
+//     giveUserABirthday(newUser)
+//     ageHTML.innerHTML = newUser.age
+// })
 
-        if (clickedPerson === "Bob") {
-            giveUserABirthday(user2)
-            var myElement = document.createElement("p")
-            myElement.innerText = user2.age
-            ageHTML.append(myElement)
-        } else {
-            giveUserABirthday(user1)
-        }
-    });
-}
+
+
 
 // var myFunction = function () {
 //     var attribute = this.getAttribute("data-myattribute");
@@ -313,19 +287,19 @@ for (var i = 0; i < elements.length; i++) {
 
 
 
-button1.addEventListener("click", function (e) {
-    console.log(e)
-    // e.preventDefault()
+// button1.addEventListener("click", function (e) {
+//     console.log(e)
+//     // e.preventDefault()
 
 
-    giveUserABirthday(newUser)
-    ageHTML.innerHTML = newUser.age
+//     giveUserABirthday(newUser)
+//     ageHTML.innerHTML = newUser.age
 
 
-    // let newText = document.createElement("p")
-    // newText.innerHTML = textInput.value
-    // choicesDiv.append(newText)
-})
+//     // let newText = document.createElement("p")
+//     // newText.innerHTML = textInput.value
+//     // choicesDiv.append(newText)
+// })
 
 // creating html elements with js and appending
 // let myElement = document.createElement("p")
